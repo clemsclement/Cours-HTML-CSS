@@ -9,21 +9,34 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-image: radial-gradient(chartreuse, pink);
     color: #333;
+    font-family: ;
+}
+
+img {
+    border-top: solid 6px yellow;
+    border-left: solid 10px green;
+    border-bottom: solid 5px red;
+    border-right: solid 4px blue;
+    margin-left: 10px;
+    box-shadow: 10px 5px 5px black;
 }
 
 strong{
     color : red;
+    background-color: aqua;
 }
 
 .metier {
     color : rgb(231, 136, 12);
+    background-color: beige;
 }
 
 #color {
     font-style: normal;
     color : blueviolet;
+    text-decoration: underline;
 }
 
 
