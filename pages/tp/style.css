@@ -13,6 +13,20 @@ body {
     color: #333;
 }
 
+strong{
+    color : red;
+}
+
+.metier {
+    color : rgb(231, 136, 12);
+}
+
+#color {
+    font-style: normal;
+    color : blueviolet;
+}
+
+
 header {
     background-color: #333;
     color: #fff;
