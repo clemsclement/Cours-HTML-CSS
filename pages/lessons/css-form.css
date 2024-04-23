@@ -1,0 +1,18 @@
+fieldset {
+    width: 50%;
+    margin:auto;
+}
+
+legend {
+    font-weight: bold;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+label, input, textarea {
+    margin-bottom: 10px;
+}

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Form</title>
     <link rel="stylesheet" href="../tp/style.css">
-    <title>Index</title>
-</head>
+    <link rel="stylesheet" href="css-form.css">
+    </head>
 <body>
     <header>
         <h1>Cours HTML - CSS</h1>
-        <h2>HTML Index</h2>
+        <h2>Formulaire</h2>
         <nav>
             <ul>
                 <li><a href="../home.html">Accueil</a></li>
@@ -17,9 +18,9 @@
                 <li><a href="../lessons/html-liens.html">Leçon 2 : HTML (liens)</a></li>
                 <li><a href="../lessons/html-img.html">Leçon 3 : HTML (images)</a></li>
                 <li><a href="../tp/cv.html">Leçon 4 : CV</a></li>
-                <li><a href="html-form.html">Leçon 5 : Formulaire</a></li>
+                <li><a href="">Leçon 5 : Formulaire</a></li>
                 <li><a href="../../index.html">Vers l'index</a></li>
-                <li><a href="../tp/navigation.html">Vers Navigation</a></li>
+                <li><a href="../../pages/tp/navigation.html">Vers Navigation</a></li>
                 <li><a href="../veille-tech.html">Vers veille technologique</a></li>
                 <li><a href="../contact.html">Vers contact</a></li>
                 <li><a href="../inscription.html">Inscription</a></li>
@@ -28,7 +29,21 @@
         </nav>
     </header>
     <main>
-        <h1>HTML IMG</h1>
+        <h1>Inscription</h1>
+        <form action="register.php" method="post">
+            <h4>Renseignez ces informations</h4>
+            <label for="pseudo">Votre pseudo</label>
+            <input type="text" name="pseudonyme" id="pseudo">
+            <input type="text" name="firstname" id="prenom" placeholder="votre Prénom">
+            <input type="password" name="motDePasse" id="mdp">
+            <textarea name="description" id="desc" cols="30" rows="10"></textarea>
+            <input type="email" name="mail" id="mail">
+            <input type="url" name="site" id="mysite">
+            <input type="tel" name="tel" id="tel">
+            <input type="number" name="number" id="number">
+            <input type="range" name="range" id="range">
+            <input type="submit" value="Envoyer">
+        </form>
     </main>
     <footer>
         <p>&copy; 2024 Mon Cours. Tous droits réservés.</p>

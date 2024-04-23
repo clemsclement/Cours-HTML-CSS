@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tp/style.css">
     <link rel="stylesheet" href="lessons/css-form.css">
-    <title>Contact</title>
+    <title>Inscription</title>
 </head>
 <body>
     <header>
         <h1>Cours HTML - CSS</h1>
-        <h2>HTML Contact</h2>
+        <h2>HTML Inscription</h2>
         <nav>
             <ul>
                 <li><a href="home.html">Accueil</a></li>
@@ -22,25 +22,28 @@
                 <li><a href="../index.html">Vers l'index</a></li>
                 <li><a href="tp/navigation.html">Vers Navigation</a></li>
                 <li><a href="veille-tech.html">Vers veille technologique</a></li>
-                <li><a href="">Vers contact</a></li>
-                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="contact.html">Vers contact</a></li>
+                <li><a href="">Inscription</a></li>
                 <li><a href="connexion.html">Connexion</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>CONTACT</h1>
+        <h1>INSCRIPTION</h1>
         <fieldset>
-            <legend>Renseignez ces informations pour nous contacter</legend>
+            <legend>Renseignez ces informations pour vous inscrire</legend>
             <form action="">
                 <input type="text" name="prenom" id="prenom" placeholder="Prénom">
                 <input type="text" name="nom" id="nom" placeholder="Nom">
                 <input type="email" name="mail" id="mail" placeholder="Email">
+                <input type="email" name="maindeux" id="maildeux" placeholder="Confirmer votre email">
                 <input type="tel" name="tel" id="tel" placeholder="Numéro de téléphone">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
-                <input type="submit" value="Envoyer"></button>
+                <input type="password" name="password" id="password" placeholder="Mot De Passe">
+                <input type="password" name="passworddeux" id="passworddeux" placeholder="Confirmer Votre Mot De Passe">
+                <input type="submit" value="S'incrire"></button>
             </form>
         </fieldset>
+        <a href="connexion.html">Déjà inscrit ? Connectez-vous !</a>
     </main>
     <footer>
         <p>&copy; 2024 Mon Cours. Tous droits réservés.</p>
