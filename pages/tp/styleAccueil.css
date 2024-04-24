@@ -1,0 +1,131 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(../../image/sanic-sonic.gif);
+    background-size: 150px;
+    background-attachment: fixed;
+}
+
+main h1, main h2{
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    margin-right: 5%;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+.lecon .container{
+    background: linear-gradient(90deg, rgba(236,255,1,1) 0%, rgba(235,114,13,1) 50%, rgba(255,59,0,1) 100%);
+}
+.tp .container{
+    background: linear-gradient(90deg, rgba(99,0,246,1) 0%, rgba(12,0,255,1) 100%);
+    color: white;
+}
+
+.container p{
+    text-align: center;
+}
+
+.container button{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 5px;
+}
+
+.container button a{
+    text-decoration: none;
+    color: black;
+}
+
+.container img{
+    height: 20vh;
+    justify-content: center;
+}
+
+#color {
+    font-style: normal;
+    color : blueviolet;
+    text-decoration: underline;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries pour le côté responsive */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav ul li {
+        margin-right: 0;
+    }
+}

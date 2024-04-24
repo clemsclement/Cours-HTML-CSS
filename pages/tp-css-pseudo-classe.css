@@ -1,0 +1,109 @@
+.sobre{
+    width: 500px;
+    height: 500px;
+    background-color: beige;
+}
+
+.extravagant{
+    width: 500px;
+    height: 500px;
+    background-color: chartreuse;
+    margin-left: 500px;
+}
+
+.sobre h3{
+    text-align: center;
+}
+
+@keyframes venir {
+    0% {
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(0px);
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes venirVertical {
+    0% {
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateX(0px);
+        transform: translateY(400px);
+    }
+    100% {
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+}
+.sobre h1{
+    animation-name: venir;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.sobre h3{
+    animation-name: venirVertical;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tourner {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.extravagant h1, .extravagant h3{
+    animation-name: tourner;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.extravagant:hover{
+    color:blue;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.extravagant img{
+    width: 200px;
+    height: 200px;
+}
+
+.extravagant img:hover{
+    animation-name: zoom;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(5);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
+
