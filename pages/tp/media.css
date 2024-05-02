@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+    header{
+        background-color: blue;
+    }
+    nav ul li{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header{
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 390px) {
+    header{
+        background-color: red;
+    }
+    main{
+        justify-content: center;
+    }
+    section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+    header{
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,145,1) 48%, rgba(252,176,69,1) 100%);
+    }
+}
